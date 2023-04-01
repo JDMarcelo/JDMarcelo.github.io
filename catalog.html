@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- Defines the document type and version of HTML being used -->
+<html>
+  <head>
+    <title>Course Catalog</title> <!-- The title of the page displayed in the browser tab -->
+    <link rel="stylesheet" type="text/css" href="course.css" /> <!-- Link to external CSS stylesheet -->
+    <link rel="icon" href="LOGO.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <h1>Course Catalog</h1> <!-- Main heading of the page -->
+
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li> <!-- Navigation link to the home page -->
+          <li><a href="catalog.html">Courses</a></li> <!-- Navigation link to the courses page -->
+          <li><a href="About.html">About Us</a></li> <!-- Navigation link to the about us page -->
+          <li><a href="Contact Us.html">Contact Us</a></li> <!-- Navigation link to the contact us page -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Featured Courses</h2> <!-- Subheading of the featured courses section -->
+        <div class="course">
+          <img src="course1.jpg" alt="College of Education" /> <!-- Image for the first featured course -->
+          <h3>College of Education</h3> <!-- Title of the first featured course -->
+          <p>
+            Preparing and developing highly-qualified basic education teachers
+            and skilled technologists through quality and well-rounded
+            pre-service training in both academic and vocational fields for
+            diverse communities of learners. <!-- Description of the first featured course -->
+          </p>
+          <button
+            type="button"
+            onclick="alert('College of Education is a four-year degree program and a board course with a primary goal of providing the students with a solid understanding of the discipline through theoretical and practical components of the curriculum')"
+          >
+            Learn More
+          </button> <!-- Button to display more information about the first featured course -->
+        </div>
+        <div class="course">
+          <img src="course2.png" alt="Course 2" /> <!-- Image for the second featured course -->
+          <h3>Political Science</h3> <!-- Title of the second featured course -->
+          <p>
+            Bachelor of Arts (BA or AB; from the Latin baccalaureus artium,
+            baccalaureus in artibus, or artium baccalaureus) is a bachelor's
+            degree awarded for an undergraduate program in the arts, or, in some
+            cases, other disciplines <!-- Description of the second featured course -->
+          </p>
+          <button>Learn More</button> <!-- Button to display more information about the second featured course -->
+        </div>
+        <div class="course">
+          <img src="course3.jpg" alt="Course 3" /> <!-- Image for the third featured course -->
+          <h3>College of Nursing</h3> <!-- Title of the third featured course -->
+          <p>
+            The Bachelor of Science in Nursing (BSN) is a four-year course that
+            is competency-based, community-oriented, and value-based. <!-- Description of the third featured course -->
+          </p>
+          <button>Learn More</button> <!-- Button to display more information about the third featured course -->
+        </div>
+      </section>
+        <!-- This section displays a list of courses, each with a link represented by a list item element within an
+           unordered list element. Each list item has a width of 50%, a height of 400px, a gray background color, and a margin bottom of 10px. -->
+<section>
+  <ul >
+    <li ><a href="#">Course 4</a></li>
+    <li><a href="#">Course 5</a></li>
+    <li ><a href="#">Course 6</a></li>
+    <li><a href="#">Course 7</a></li>
+    <li><a href="#">Course 8</a></li>
+  </ul>
+</section>
+<!-- This is the closing tag for the main element that contains the majority of the content. -->
+</main>
+<!-- This is the footer section of the web page containing a paragraph element displaying the current year and
+   the name of the course catalog, as well as a form element for user login. The form has two input elements of type email and password respectively, and a submit button. -->
+<footer>
+  <p>&copy; 2023 Course Catalog</p>
+  <form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" />
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" />
+    <button type="submit">Log In</button>
+  </form>
+</footer>
+<!-- This is the closing tag for the body element of the HTML document. -->
+</body>
+<!-- This is the closing tag for the HTML document. -->
+</html>

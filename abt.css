@@ -1,0 +1,14 @@
+body{
+    background-image: url('Online Course FB Cover.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.img{
+    width: 10%;
+    height: 10%;
+    align-items: center;
+}

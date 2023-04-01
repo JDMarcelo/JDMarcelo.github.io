@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- defines the document type -->
+<html>
+  <!-- marks the beginning of an HTML document -->
+  <head>
+    <title>Registration Form</title>
+    <!-- sets the title of the document -->
+    <link rel="stylesheet" type="text/css" href="register.css" />
+    <link rel="icon" href="LOGO.jpg" type="image/x-icon">
+    <!-- links to an external stylesheet -->
+  </head>
+  <body>
+    <!-- marks the beginning of the visible content of the document -->
+    <header>
+      <div class="header-content">
+        <div class="header-buttons">
+          <a href="About.html" class="about-button">About</a>
+          <a href="Contact Us.html" class="contact-button">Contact Us</a>
+        </div>
+        <!-- contains a navigation menu -->
+      </div>
+    </header>
+    <div class="registration-form">
+      <h2>Register</h2>
+      <!-- displays a heading -->
+      <form>
+        <label for="username">Username</label>
+        <!-- provides a label for the username input field -->
+        <input type="text" id="username" name="username" />
+        <!-- creates a username input field -->
+        <label for="email">Email</label>
+        <!-- provides a label for the email input field -->
+        <input type="email" id="email" name="email" />
+        <!-- creates an email input field -->
+        <label for="password">Password</label>
+        <!-- provides a label for the password input field -->
+        <input type="password" id="password" name="password" />
+        <!-- creates a password input field -->
+        <label for="confirm-password">Confirm Password</label>
+        <!-- provides a label for the confirm password input field -->
+        <input type="password" id="confirm-password" name="confirm-password" />
+        <!-- creates a confirm password input field -->
+        <input type="submit" value="Register" id="register-button" />
+        <!-- creates a submit button -->
+      </form>
+      <p>Already have an account? <a href="index.htm">Login here</a></p>
+      <!-- provides a link to a login page -->
+    </div>
+
+    <script>
+      // Select the form element
+      const form = document.querySelector("form");
+
+      // Add an event listener to the form
+      form.addEventListener("submit", function (event) {
+        // Prevent the form from submitting
+        event.preventDefault();
+
+        // Redirect to the login page
+        window.location.href = "index.htm";
+      });
+    </script>
+    <!-- links to a JavaScript file -->
+  </body>
+</html>
+<!-- marks the end of the HTML document -->

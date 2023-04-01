@@ -1,0 +1,80 @@
+body {
+	background-image: url('Online Course FB Cover.png');
+	background-size: cover;
+	background-position: center;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.login-form {
+	margin: 50px auto;
+	padding: 20px;
+	width: 300px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.login-form h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.login-form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+	padding: 10px;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+#login-button {
+	background-color: #1895f5;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	text-align: center; /* Add this line to center the button */
+}
+
+#login-button:hover {
+	background-color: #2a35fd;
+}
+/* Styling for the about and contact info buttons */
+.about-button, .contact-button {
+	position: absolute;
+	top: 10px;
+  }
+  
+  .about-button {
+	right: 150px;
+  }
+  
+  .contact-button {
+	right: 10px;
+  }
+  .about-button, .contact-button {
+	display: inline-block;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	color: #333;
+	font-weight: bold;
+	text-decoration: none;
+	margin-right: 10px;
+  }
+  
+  /* Hover state for the buttons */
+  .about-button:hover, .contact-button:hover {
+	background-color: #333;
+	color: #f2f2f2;
+  }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="LOGO.jpg" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<div class="header-content">
+			<div class="header-buttons">
+				<a href="About.html" class="about-button">About</a>
+				<a href="Contact Us.html" class="contact-button">Contact Us</a>
+			</div>
+		</div>
+	</header>
+	<!-- Login form container -->
+	<div class="login-form">
+		<!-- Login form title -->
+		<h2>Login</h2>
+		<!-- Login form -->
+		<form id="login-form">
+			<!-- Username input field -->
+			<label for="username">Username</label>
+			<input type="text" id="username" name="username">
+			<!-- Password input field -->
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password">
+			<!-- Login button -->
+			<input type="submit" value="Login" id="login-button">
+		</form>
+		<!-- Registration link -->
+		<p>Don't have an account? <a href="register.html">Register here</a></p>
+	</div>
+	<!-- JavaScript code for handling login form submission -->
+	<script>
+		document.getElementById('login-form').addEventListener('submit', function(event) {
+			event.preventDefault(); // Prevent the form from submitting normally
+
+			// Get the values from the form
+			var username = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
+
+			// Hardcoded list of users and passwords (for demonstration purposes only)
+			var users = [
+				{ username: 'user1', password: 'password1' },
+				{ username: 'user2', password: 'password2' },
+				{ username: 'user3', password: 'password3' }
+			];
+
+			// Check if the entered username and password match any of the users
+			var user = users.find(function(u) {
+				return u.username === username && u.password === password;
+			});
+
+			if (user) {
+				// Login successful, redirect the user to the registration form
+				window.location.assign('catalog.html');
+				alert('Redirecting to registration form...');
+			} else {
+				// Login failed, display an error message
+				alert('Invalid username or password');
+			}
+		});
+	</script>
+</body>
+</html>

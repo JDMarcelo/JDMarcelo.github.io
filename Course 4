@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course Catalog</title>
+<link rel="stylesheet" type="text/css" href="course.css">
+</head>
+<body>
+
+<h2>Featured Courses</h2>
+<div class="course">
+<img src="course1.jpg" alt="College of Education">
+<h3> College of Engineering </h3> 
+ 
+</main>
+
+</body>
+</html>
